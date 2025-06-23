@@ -6,15 +6,15 @@ import About from "./components/About";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center px-4 overflow-hidden">
-        {/* Optional background (gradient/texture) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 to-gray-100/10 -z-10" />
+      {/* Hero Section - Dark Gradient */}
+      <section className="relative h-[90vh] flex items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950">
+        {/* Optional subtle texture */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900/50 to-gray-950/90 -z-10" />
         
         {/* Content */}
         <div className="max-w-3xl mx-auto">
           {/* Avatar/Logo */}
-          <div className="mx-auto mb-8 w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <div className="mx-auto mb-8 w-32 h-32 rounded-full overflow-hidden border-4 border-gray-800 shadow-lg">
             <Image
               src="/herta-pic.png"
               alt="Anthony Mendez"
@@ -26,12 +26,12 @@ export default function Home() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-400 mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 mb-4">
             Anthony Mendez
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Full-Stack Developer | Software Engineer
           </p>
 
@@ -39,19 +39,18 @@ export default function Home() {
           <div className="flex gap-4 justify-center">
             <a
               href="#projects"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md"
             >
               View My Work
             </a>
             <a
               href="mailto:anthonymendez.dev@gmail.com"
-              className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="px-6 py-3 border border-gray-700 hover:bg-gray-800/50 text-gray-300 rounded-lg transition-colors"
             >
               Contact Me
             </a>
           </div>
         </div> 
-
 
         {/* Scroll Down Arrow */}
         <a 
@@ -60,7 +59,7 @@ export default function Home() {
           aria-label="Scroll to projects"
         >
           <svg 
-            className="w-6 h-6 text-gray-400 hover:text-blue-500 transition-colors" 
+            className="w-6 h-6 text-gray-400 hover:text-blue-400 transition-colors" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"
@@ -75,17 +74,10 @@ export default function Home() {
         </a>
       </section>
 
-
-      {/* Projects Section */}
-      <Projects/>
-
-
-      {/* Skills Section */}
+      {/* Rest of your sections... */}
+      <Projects />
       <Skills />
-
-      {/* About Section */}
       <About />
-
     </main>
   );
 }
