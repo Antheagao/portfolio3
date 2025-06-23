@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 py-6 mt-12">
