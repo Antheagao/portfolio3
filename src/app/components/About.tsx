@@ -12,17 +12,17 @@ export default function About() {
           
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
-              I'm a <span className="font-semibold">Full-Stack Developer</span> with a passion for 
+              I&rsquo;m a <span className="font-semibold">Full-Stack Developer</span> with a passion for 
               building efficient, user-centric applications.
             </p>
             
             <p>
               Recently graduated with a <span className="font-semibold">Master of Science in Computer Science</span>, 
-              I've developed projects that focus on optimizations and full stack web applications.
+              I&rsquo;ve developed projects that focus on optimizations and full stack web applications.
             </p>
             
             <p>
-              When I'm not coding, you'll find me playing video games, going to the gym, and watching anime.
+              When I&rsquo;m not coding, you&rsquo;ll find me playing video games, going to the gym, and watching anime.
             </p>
           </div>
 
