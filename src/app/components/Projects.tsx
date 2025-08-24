@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Graph Search Visualizer",
     description: "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A, Dijkstra, BFS, DFS, Bidirectional BFS)",
-    tech: ["Python, FastAPI, JavaScript, React, Tailwind"],
+    tech: ["Python", "FastAPI", "JavaScript", "React", "Tailwind"],
     github: "https://github.com/Antheagao/graph-search-visual",
     demo: "https://graph-search-visual.vercel.app",
     image: "/graph-demo.gif"
