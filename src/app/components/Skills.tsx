@@ -3,7 +3,7 @@ import {
   SiTypescript, SiJavascript, SiPython, SiCplusplus, 
   SiPostgresql, SiHtml5, SiCss3, SiReact, SiNextdotjs, 
   SiNodedotjs, SiExpress, SiPytorch, SiJest, SiGit,
-  SiDocker, SiLinux 
+  SiDocker, SiLinux, SiFastapi, SiTailwindcss
 } from 'react-icons/si';
 
 const skillsByCategory = [
@@ -23,6 +23,7 @@ const skillsByCategory = [
     skills: [
       { name: "React", icon: <SiReact className="text-cyan-500" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
       { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
       { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> }
     ],
@@ -33,6 +34,7 @@ const skillsByCategory = [
     skills: [
       { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
       { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-gray-200" /> },
+      { name: "FastAPI", icon: <SiFastapi className="text-teal-500" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> }
     ],
     color: "bg-green-50 dark:bg-green-900/20"
@@ -57,6 +59,7 @@ const skillsByCategory = [
     color: "bg-red-50 dark:bg-red-900/20"
   }
 ];
+
 
 export default function Skills() {
   return (

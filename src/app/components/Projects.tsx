@@ -2,6 +2,14 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Graph Search Visualizer",
+    description: "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A, Dijkstra, BFS, DFS, Bidirectional BFS)",
+    tech: ["Python, FastAPI, JavaScript, React, Tailwind"],
+    github: "https://github.com/Antheagao/graph-search-visual",
+    demo: "https://graph-search-visual.vercel.app",
+    image: "/graph-demo.gif"
+  },
+  {
     title: "Book Review App",
     description: "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
@@ -17,14 +25,6 @@ const projects = [
     demo: "",
     image: "/ecommerce-home.png"
   },
-  {
-    title: "Ai shipping containers",
-    description: "A-star algorithm with weight heuristics reduced ship balance time 92%, boosted compliance to 94%, and automated manifests (75% fewer errors) via Pandas optimization.",
-    tech: ["Python"],
-    github: "https://github.com/Antheagao/Shipping_Container_Project",
-    demo: "",
-    image: "/ai-ship.png"
-  }
 ];
 
 export default function Projects() {
