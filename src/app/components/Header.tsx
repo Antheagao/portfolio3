@@ -12,6 +12,10 @@ export default function Header() {
           <Link href="https://github.com/Antheagao/" target="_blank" rel="noopener noreferrer" className="hover:underline">
             GitHub
           </Link>
+
+          <Link href="https://myanimelist.net/profile/Antheagao" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            MyAnimeList
+          </Link>
         </div>
       </nav>
     </header>
