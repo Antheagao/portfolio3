@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Dark Gradient */}
-      <section className="relative min-h-[90vh] pb-8 flex items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950">
+      <section className="relative h-[90vh] flex items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950">
         {/* Optional subtle texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900/50 to-gray-950/90 -z-10" />
         
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold leading-snug bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 mb-3">
             Anthony Mendez
           </h1>
           
