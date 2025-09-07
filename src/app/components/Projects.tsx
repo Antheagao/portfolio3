@@ -10,20 +10,20 @@ const projects = [
     image: "/graph-demo.gif"
   },
   {
-    title: "Book Review App",
-    description: "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
-    tech: ["React", "Node.js", "Express", "PostgreSQL"],
-    github: "https://github.com/Antheagao/book-notes-app",
-    demo: "",
-    image: "/book-notes-home.png"
-  },
-  {
     title: "Anime Rater",
     description: "Full-stack web application where users can sign in, like/dislike, and comment on anime, manga, and characters. Features an ETL pipeline from the Jikan API, responsive UI, and top favorites ranking.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Fastify", "Node.js", "Prisma", "PostgreSQL (Supabase)"],
     github: "https://github.com/Antheagao/character-rater",
     demo: "https://character-rater.vercel.app",
     image: "/character-demo.gif"
+  },
+  {
+    title: "Book Review App",
+    description: "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL"],
+    github: "https://github.com/Antheagao/book-notes-app",
+    demo: "",
+    image: "/book-notes-home.png"
   },
 ];
 
