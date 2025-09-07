@@ -1,9 +1,9 @@
 import { FaJava, FaServer, FaAws } from 'react-icons/fa';
 import { 
   SiTypescript, SiJavascript, SiPython, SiCplusplus, 
-  SiPostgresql, SiHtml5, SiCss3, SiReact, SiNextdotjs, 
-  SiNodedotjs, SiExpress, SiPytorch, SiJest, SiGit,
-  SiDocker, SiLinux, SiFastapi, SiTailwindcss
+  SiPostgresql, SiSupabase, SiHtml5, SiCss3, SiReact, SiNextdotjs, 
+  SiNodedotjs, SiExpress, SiFastify, SiFastapi, SiPrisma, 
+  SiPytorch, SiJest, SiGit, SiDocker, SiLinux, SiTailwindcss
 } from 'react-icons/si';
 
 const skillsByCategory = [
@@ -33,9 +33,12 @@ const skillsByCategory = [
     name: "Backend/Database",
     skills: [
       { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
+      { name: "Fastify", icon: <SiFastify className="text-teal-600" /> },
       { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-gray-200" /> },
       { name: "FastAPI", icon: <SiFastapi className="text-teal-500" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> }
+      { name: "Prisma", icon: <SiPrisma className="text-indigo-600" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
+      { name: "Supabase", icon: <SiSupabase className="text-green-500" /> }
     ],
     color: "bg-green-50 dark:bg-green-900/20"
   },

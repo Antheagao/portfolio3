@@ -3,7 +3,7 @@ import Image from "next/image";
 const projects = [
   {
     title: "Graph Search Visualizer",
-    description: "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A, Dijkstra, BFS, DFS, Bidirectional BFS)",
+    description: "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A*, Dijkstra, BFS, DFS, Bidirectional BFS).",
     tech: ["Python", "FastAPI", "JavaScript", "React", "Tailwind"],
     github: "https://github.com/Antheagao/graph-search-visual",
     demo: "https://graph-search-visual.vercel.app",
@@ -18,12 +18,12 @@ const projects = [
     image: "/book-notes-home.png"
   },
   {
-    title: "E-Commerce Store",
-    description: "E-commerce platform with React frontend, Spring Boot backend & PostgreSQL. Features JWT auth, rate-limited APIs, and responsive UI.",
-    tech: ["Java", "Spring Boot", "React", "PostgreSQL"],
-    github: "https://github.com/Antheagao/ecommerce-app",
-    demo: "",
-    image: "/ecommerce-home.png"
+    title: "Anime Rater",
+    description: "Full-stack web application where users can sign in, like/dislike, and comment on anime, manga, and characters. Features an ETL pipeline from the Jikan API, responsive UI, and top favorites ranking.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Fastify", "Node.js", "Prisma", "PostgreSQL (Supabase)"],
+    github: "https://github.com/Antheagao/character-rater",
+    demo: "https://character-rater.vercel.app",
+    image: "/character-demo.gif"
   },
 ];
 
