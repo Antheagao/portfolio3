@@ -46,15 +46,15 @@ export default function About() {
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
                 <div>
-                  <p className="font-medium">Full Stack Web Developer</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Udemy (2025)</p>
+                  <p className="font-medium">Full Stack Web Developer Bootcamp</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Udemy (Jan 2025)</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
                 <div>
                   <p className="font-medium">CompTIA Security+</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">CompTia (2025)</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">CompTia (Aug 2025)</p>
                 </div>
               </li>
             </ul>
