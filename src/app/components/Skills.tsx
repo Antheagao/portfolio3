@@ -29,6 +29,7 @@ import {
   SiSwagger,
   SiVite,
   SiGithubactions,
+  SiAxios,
 } from "react-icons/si";
 import React from "react";
 
@@ -38,29 +39,21 @@ function SkillChip({ icon, name }: { icon: React.ReactNode; name: string }) {
     <div
       className="
         bg-white dark:bg-gray-800 px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700
-        flex items-center gap-2 min-h-[46px] min-w-0 w-full
+        flex items-center gap-2 min-h-[40px] min-w-0 w-full
       "
     >
       <span className="text-lg shrink-0">{icon}</span>
-      {/* key: allow wrapping and prevent overflow */}
-      <span
-        className="
-          text-[12px] md:text-[13px] leading-tight
-          whitespace-normal break-words break-all hyphens-auto
-          overflow-hidden
-        "
-      >
+      <span className="text-sm leading-tight whitespace-nowrap overflow-hidden">
         {name}
       </span>
     </div>
   );
 }
 
-/* ----------------------------- data model ----------------------------- */
 type SkillItem = { name: string; icon: React.ReactNode };
 type SkillCategory = { name: string; color: string; skills: SkillItem[] };
 
-/* ---------------------------- skill content --------------------------- */
+/* ---------------------------- data (short labels) ---------------------------- */
 const skillsByCategory: SkillCategory[] = [
   {
     name: "Languages",
@@ -81,8 +74,8 @@ const skillsByCategory: SkillCategory[] = [
       { name: "React", icon: <SiReact className="text-cyan-500" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
       { name: "Vite", icon: <SiVite className="text-purple-500" /> },
-      { name: "Axios", icon: <span className="text-sm font-semibold">Axios</span> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
+      { name: "Axios", icon: <SiAxios className="text-sky-600" /> },
+      { name: "Tailwind", icon: <SiTailwindcss className="text-sky-500" /> },
       { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
       { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
     ],
@@ -91,9 +84,9 @@ const skillsByCategory: SkillCategory[] = [
     name: "Backend / Database",
     color: "bg-green-50 dark:bg-green-900/20",
     skills: [
-      { name: "ASP.NET Core", icon: <SiDotnet className="text-indigo-500" /> },
-      { name: "Entity Framework Core", icon: <span className="text-sm font-semibold">EF Core</span> },
-      { name: "ASP.NET Identity (JWT)", icon: <span className="text-sm font-semibold">Identity / JWT</span> },
+      { name: "ASP.NET", icon: <SiDotnet className="text-indigo-500" /> },
+      { name: "EF Core", icon: <span className="text-sm font-semibold">EF</span> },
+      { name: "Identity/JWT", icon: <span className="text-sm font-semibold">JWT</span> },
       { name: "SQL Server", icon: <FaDatabase className="text-red-600" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
       { name: "Supabase", icon: <SiSupabase className="text-green-500" /> },
@@ -102,7 +95,7 @@ const skillsByCategory: SkillCategory[] = [
       { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-gray-200" /> },
       { name: "FastAPI", icon: <SiFastapi className="text-teal-500" /> },
       { name: "Prisma", icon: <SiPrisma className="text-indigo-600" /> },
-      { name: "Swagger / OpenAPI", icon: <SiSwagger className="text-green-600" /> },
+      { name: "Swagger", icon: <SiSwagger className="text-green-600" /> },
     ],
   },
   {
@@ -110,11 +103,13 @@ const skillsByCategory: SkillCategory[] = [
     color: "bg-orange-50 dark:bg-orange-900/20",
     skills: [
       { name: "AWS", icon: <FaAws className="text-orange-400" /> },
-      { name: "S3 / CloudFront", icon: <span className="text-sm font-semibold">S3 / CloudFront</span> },
-      { name: "App Runner / ECR", icon: <span className="text-sm font-semibold">App Runner / ECR</span> },
-      { name: "RDS (SQL Server)", icon: <span className="text-sm font-semibold">RDS (SQL Server)</span> },
-      { name: "VPC / SG", icon: <span className="text-sm font-semibold">VPC / SG</span> },
-      { name: "CloudWatch", icon: <span className="text-sm font-semibold">CloudWatch</span> },
+      { name: "S3", icon: <span className="text-sm font-semibold">S3</span> },
+      { name: "CloudFront", icon: <span className="text-sm font-semibold">CF</span> },
+      { name: "AppRunner", icon: <span className="text-sm font-semibold">AppRunner</span> },
+      { name: "ECR", icon: <span className="text-sm font-semibold">ECR</span> },
+      { name: "RDS", icon: <span className="text-sm font-semibold">RDS</span> },
+      { name: "VPC", icon: <span className="text-sm font-semibold">VPC</span> },
+      { name: "CloudWatch", icon: <span className="text-sm font-semibold">CW</span> },
       { name: "GitHub Actions", icon: <SiGithubactions className="text-blue-500" /> },
       { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
       { name: "Git", icon: <SiGit className="text-orange-600" /> },
@@ -151,8 +146,7 @@ export default function Skills() {
               {category.name}
             </h3>
 
-            {/* more room on small screens; wrap-friendly chips */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 [grid-auto-rows:minmax(46px,auto)]">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
               {category.skills.map((skill) => (
                 <SkillChip key={skill.name} icon={skill.icon} name={skill.name} />
               ))}
