@@ -2,8 +2,26 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "To-Do App",
+    description:
+      "Dark-themed task manager with secure sign-in, CRUD tasks, due dates/times, urgency, filtering & sorting. Deployed on AWS (S3 + CloudFront, App Runner, RDS).",
+    tech: [
+      "C#/.NET",
+      "ASP.NET Core",
+      "EF Core",
+      "SQL Server",
+      "React (Vite)",
+      "Axios",
+      "AWS"
+    ],
+    github: "https://github.com/Antheagao/to-do-app",
+    demo: "https://d1p7pk2h9bas4v.cloudfront.net",
+    image: "/todo-demo.gif"
+  },
+  {
     title: "Graph Search Visualizer",
-    description: "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A*, Dijkstra, BFS, DFS, Bidirectional BFS).",
+    description:
+      "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A*, Dijkstra, BFS, DFS, Bidirectional BFS).",
     tech: ["Python", "FastAPI", "JavaScript", "React", "Tailwind"],
     github: "https://github.com/Antheagao/graph-search-visual",
     demo: "https://graph-search-visual.vercel.app",
@@ -11,20 +29,30 @@ const projects = [
   },
   {
     title: "Anime Rater",
-    description: "Full-stack web application where users can sign in, like/dislike, and comment on anime, manga, and characters. Features an ETL pipeline from the Jikan API, responsive UI, and top favorites ranking.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Fastify", "Node.js", "Prisma", "PostgreSQL (Supabase)"],
+    description:
+      "Full-stack web application where users can sign in, like/dislike, and comment on anime, manga, and characters. Features an ETL pipeline from the Jikan API, responsive UI, and top favorites ranking.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Fastify",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL (Supabase)"
+    ],
     github: "https://github.com/Antheagao/character-rater",
     demo: "https://character-rater.vercel.app",
     image: "/character-demo.gif"
   },
   {
     title: "Book Review App",
-    description: "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
+    description:
+      "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com/Antheagao/book-notes-app",
     demo: "",
     image: "/book-notes-home.png"
-  },
+  }
 ];
 
 export default function Projects() {
