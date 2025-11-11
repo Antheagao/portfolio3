@@ -74,7 +74,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* Rest of your sections... */}
+      {/* Rest of sections */}
       <Projects />
       <Skills />
       <About />
