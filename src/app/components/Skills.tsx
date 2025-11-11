@@ -42,6 +42,7 @@ const skillsByCategory = [
       { name: "ASP.NET Identity (JWT)", icon: <span className="text-sm font-semibold">Identity/JWT</span> },
       { name: "SQL Server", icon: <FaDatabase className="text-red-600" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
+      { name: "Supabase", icon: <SiSupabase className="text-green-500" /> },
       { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
       { name: "Fastify", icon: <SiFastify className="text-teal-600" /> },
       { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-gray-200" /> },
