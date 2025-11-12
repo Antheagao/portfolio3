@@ -2,6 +2,8 @@ import Image from "next/image";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import DiscordButton from "./components/DiscordButton";
+import Availability from "./components/Availability";
 
 export default function Home() {
   return (
@@ -37,20 +39,15 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex gap-4 justify-center">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md"
-            >
+            <a href="#projects" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md">
               View My Work
             </a>
-            <a
-              href="mailto:anthonymendez.dev@gmail.com"
-              className="px-6 py-3 border border-gray-700 hover:bg-gray-800/50 text-gray-300 rounded-lg transition-colors"
-            >
+            <a href="mailto:anthonymendez.dev@gmail.com" className="px-6 py-3 border border-gray-700 hover:bg-gray-800/50 text-gray-300 rounded-lg transition-colors">
               Contact Me
             </a>
-          </div>
-        </div> 
+              <DiscordButton />
+          </div> 
+        </div>
 
         {/* Scroll Down Arrow */}
         <a 
@@ -73,6 +70,9 @@ export default function Home() {
           </svg>
         </a>
       </section>
+
+      {/* Availability */}
+      <Availability />
 
       {/* Rest of sections */}
       <Projects />

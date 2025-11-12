@@ -1,22 +1,16 @@
-import Image from "next/image";
+// components/Projects.tsx
+import ProjectMedia from "./ProjectMedia";
 
 const projects = [
   {
     title: "To-Do App",
     description:
       "Dark-themed task manager with secure sign-in, CRUD tasks, due dates/times, urgency, filtering & sorting. Deployed on AWS (S3 + CloudFront, App Runner, RDS).",
-    tech: [
-      "C#/.NET",
-      "ASP.NET Core",
-      "EF Core",
-      "SQL Server",
-      "React (Vite)",
-      "Axios",
-      "AWS"
-    ],
+    tech: ["C#/.NET", "ASP.NET Core", "EF Core", "SQL Server", "React (Vite)", "Axios", "AWS"],
     github: "https://github.com/Antheagao/to-do-app",
     demo: "https://d1p7pk2h9bas4v.cloudfront.net",
-    image: "/todo-demo.gif"
+    image: "/todo-demo.gif",
+    videoBase: "/todo-demo",
   },
   {
     title: "Graph Search Visualizer",
@@ -25,7 +19,8 @@ const projects = [
     tech: ["Python", "FastAPI", "JavaScript", "React", "Tailwind"],
     github: "https://github.com/Antheagao/graph-search-visual",
     demo: "https://graph-search-visual.vercel.app",
-    image: "/graph-demo.gif"
+    image: "/graph-demo.gif",
+    videoBase: "/graph-demo",
   },
   {
     title: "Anime Rater",
@@ -38,11 +33,12 @@ const projects = [
       "Fastify",
       "Node.js",
       "Prisma",
-      "PostgreSQL (Supabase)"
+      "PostgreSQL (Supabase)",
     ],
     github: "https://github.com/Antheagao/character-rater",
     demo: "https://character-rater.vercel.app",
-    image: "/character-demo.gif"
+    image: "/character-demo.gif",
+    videoBase: "/character-demo",
   },
   {
     title: "Book Review App",
@@ -51,8 +47,8 @@ const projects = [
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com/Antheagao/book-notes-app",
     demo: "",
-    image: "/book-notes-home.png"
-  }
+    image: "/book-notes-home.png",
+  },
 ];
 
 export default function Projects() {
@@ -61,33 +57,34 @@ export default function Projects() {
       <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">
         My <span className="text-blue-400">Projects</span>
       </h2>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div 
-            key={index}
+          <div
+            key={project.title}
             className="bg-[#1a1a1a] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700 hover:border-blue-400/30"
           >
+            {/* Media */}
             <div className="h-48 relative">
-              <Image
-                src={project.image}
+              <ProjectMedia
+                image={project.image}
+                videoBase={project.videoBase}
                 alt={`${project.title} screenshot`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={index < 2}
               />
-              {/* Image overlay for better text contrast */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-gray-900/10" />
             </div>
-            
+
+            {/* Content */}
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-gray-100">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">
+                {project.title}
+              </h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
-              
+
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (
-                  <span 
+                  <span
                     key={tech}
                     className="px-3 py-1 bg-gray-800 text-gray-200 text-sm rounded-full"
                   >
@@ -95,7 +92,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              
+
               <div className="flex gap-3">
                 <a
                   href={project.github}
