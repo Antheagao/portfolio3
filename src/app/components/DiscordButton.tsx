@@ -1,18 +1,17 @@
 "use client";
 import { useState, useCallback } from "react";
 import { SiDiscord } from "react-icons/si";
+import { site } from "@/data/site";
 
-const DISCORD_USERNAME = "@Antheagao";
-
-export default function CopyDiscordButton() {
+export default function DiscordButton() {
   const [copied, setCopied] = useState(false);
 
   const copy = useCallback(async () => {
     try {
-      await navigator.clipboard.writeText(DISCORD_USERNAME);
+      await navigator.clipboard.writeText(site.discordUsername);
     } catch {
       const ta = document.createElement("textarea");
-      ta.value = DISCORD_USERNAME;
+      ta.value = site.discordUsername;
       document.body.appendChild(ta);
       ta.select();
       document.execCommand("copy");

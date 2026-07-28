@@ -1,5 +1,3 @@
-"use client";
-
 export default function Availability() {
   return (
     <section
@@ -21,7 +19,7 @@ export default function Availability() {
           </h2>
 
           <p className="text-gray-300 max-w-2xl">
-            Based in <span className="font-medium text-white"> South California (PT) </span>.{" "}
+            Based in <span className="font-medium text-white">Southern California (PT)</span>.{" "}
             Typical response within <span className="font-medium text-white">24 hours</span>.{" "}
             Preferred contact hours: <span className="font-medium text-white">Mon–Sat, 8am–8pm PT</span>.
           </p>

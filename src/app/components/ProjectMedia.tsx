@@ -1,14 +1,17 @@
 import Image from "next/image";
 
 type Props = {
-  image: string;
   alt: string;
   priority?: boolean;
-  videoBase?: string;      
-  poster?: string;  
+  /** Static screenshot, used when no video is available. */
+  image?: string;
+  /** Base path of a video pair (`<base>.webm` / `<base>.mp4`). */
+  videoBase?: string;
+  /** Poster frame shown while the video loads. */
+  poster?: string;
 };
 
-export default function ProjectMedia({ image, alt, priority, videoBase, poster }: Props) {
+export default function ProjectMedia({ alt, priority, image, videoBase, poster }: Props) {
   if (videoBase) {
     return (
       <video
@@ -19,12 +22,15 @@ export default function ProjectMedia({ image, alt, priority, videoBase, poster }
         playsInline
         preload="metadata"
         poster={poster}
+        aria-label={alt}
       >
         <source src={`${videoBase}.webm`} type="video/webm" />
         <source src={`${videoBase}.mp4`} type="video/mp4" />
       </video>
     );
   }
+
+  if (!image) return null;
 
   return (
     <Image
