@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectVideo from "./ProjectVideo";
 
 type Props = {
   alt: string;
@@ -13,21 +14,7 @@ type Props = {
 
 export default function ProjectMedia({ alt, priority, image, videoBase, poster }: Props) {
   if (videoBase) {
-    return (
-      <video
-        className="w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-        poster={poster}
-        aria-label={alt}
-      >
-        <source src={`${videoBase}.webm`} type="video/webm" />
-        <source src={`${videoBase}.mp4`} type="video/mp4" />
-      </video>
-    );
+    return <ProjectVideo videoBase={videoBase} poster={poster} alt={alt} />;
   }
 
   if (!image) return null;

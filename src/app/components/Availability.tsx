@@ -27,7 +27,7 @@ export default function Availability() {
           {/* quick facts */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             <span className="rounded-md bg-gray-800/70 text-gray-200 px-3 py-1 border border-gray-700">
-              New-grad / Entry-level SWE roles
+              Early-career Software Engineer roles
             </span>
             <span className="rounded-md bg-gray-800/70 text-gray-200 px-3 py-1 border border-gray-700">
               Full-time • Hybrid/On-site • Open to relocate

@@ -1,4 +1,4 @@
-import { FaJava, FaServer, FaAws, FaDatabase } from "react-icons/fa";
+import { FaJava, FaAws, FaDatabase } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import {
   SiTypescript,
@@ -29,12 +29,17 @@ import {
   SiAxios,
 } from "react-icons/si";
 
-export type Skill = { name: string; icon?: React.ReactNode };
+export type Skill = {
+  name: string;
+  icon?: React.ReactNode;
+  /** Span the full row — for chips whose label needs the width. */
+  wide?: boolean;
+};
 export type SkillCategory = { name: string; color: string; skills: Skill[] };
 
 export const skillsByCategory: SkillCategory[] = [
   {
-    name: "Languages",
+    name: "Languages & ML",
     color: "bg-blue-900/20",
     skills: [
       { name: "C#", icon: <TbBrandCSharp className="text-green-500" /> },
@@ -43,6 +48,7 @@ export const skillsByCategory: SkillCategory[] = [
       { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
       { name: "Python", icon: <SiPython className="text-blue-400" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
+      { name: "PyTorch", icon: <SiPytorch className="text-red-500" /> },
     ],
   },
   {
@@ -56,6 +62,7 @@ export const skillsByCategory: SkillCategory[] = [
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
       { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
       { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
+      { name: "Jest", icon: <SiJest className="text-red-400" /> },
     ],
   },
   {
@@ -80,27 +87,15 @@ export const skillsByCategory: SkillCategory[] = [
     name: "Cloud / DevOps",
     color: "bg-orange-900/20",
     skills: [
-      { name: "AWS", icon: <FaAws className="text-orange-400" /> },
-      { name: "S3" },         // text-only
-      { name: "CloudFront" }, // text-only
-      { name: "App Runner" }, // text-only
-      { name: "ECR" },        // text-only
-      { name: "RDS" },        // text-only
-      { name: "VPC" },        // text-only
-      { name: "CloudWatch" }, // text-only
+      {
+        name: "AWS (S3 · CloudFront · App Runner · RDS)",
+        icon: <FaAws className="text-orange-400" />,
+        wide: true,
+      },
       { name: "GitHub Actions", icon: <SiGithubactions className="text-blue-500" /> },
       { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
       { name: "Git", icon: <SiGit className="text-orange-600" /> },
       { name: "Linux", icon: <SiLinux className="text-yellow-500" /> },
-      { name: "CI/CD", icon: <FaServer className="text-gray-400" /> },
-    ],
-  },
-  {
-    name: "Testing / AI",
-    color: "bg-red-900/20",
-    skills: [
-      { name: "Jest", icon: <SiJest className="text-red-400" /> },
-      { name: "PyTorch", icon: <SiPytorch className="text-red-500" /> },
     ],
   },
 ];

@@ -2,6 +2,7 @@
 export const site = {
   name: "Anthony Mendez",
   tagline: "Full-Stack Developer | Software Engineer",
+  url: "https://www.anthonymendezswe.com",
   email: "anthonymendez.dev@gmail.com",
   discordUsername: "@Antheagao",
   links: {

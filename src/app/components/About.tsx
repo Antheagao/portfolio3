@@ -18,8 +18,10 @@ export default function About() {
             </p>
 
             <p>
-              Recently graduated with a <span className="font-semibold">Master of Science in Computer Science</span>,
-              I&rsquo;ve developed projects that focus on optimizations and full stack web applications.
+              I hold a <span className="font-semibold">Master of Science in Computer Science</span> from
+              UC Riverside, and since graduating I&rsquo;ve been designing, building, and deploying
+              full-stack applications end to end — from AWS-hosted production apps to algorithm
+              visualization platforms.
             </p>
 
             <p>

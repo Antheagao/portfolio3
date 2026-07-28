@@ -1,9 +1,13 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 import { Inter } from "next/font/google";
+
+import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -12,19 +16,21 @@ const description =
   "Portfolio of Anthony Mendez, a full-stack developer building efficient, user-centric web applications.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title,
   description,
   openGraph: {
     title,
     description,
     type: "website",
-    images: ["/herta-pic.png"],
+    url: site.url,
+    images: ["/og-image.png"],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
-    images: ["/herta-pic.png"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -39,6 +45,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

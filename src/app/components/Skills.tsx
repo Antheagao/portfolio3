@@ -22,8 +22,9 @@ export default function Skills() {
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="bg-gray-800 p-3 rounded-lg border border-gray-700
-                             flex items-center gap-2 hover:scale-[1.02] transition-transform"
+                  className={`bg-gray-800 p-3 rounded-lg border border-gray-700
+                             flex items-center gap-2 hover:scale-[1.02] transition-transform
+                             ${skill.wide ? "col-span-2 sm:col-span-3" : ""}`}
                 >
                   {skill.icon && <span className="text-xl shrink-0">{skill.icon}</span>}
                   <span className="text-sm font-medium whitespace-nowrap overflow-hidden text-ellipsis text-gray-200">
