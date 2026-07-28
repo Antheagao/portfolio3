@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="flex gap-4 justify-center">
           <a
             href="#projects"
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md"
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors shadow-md"
           >
             View My Work
           </a>

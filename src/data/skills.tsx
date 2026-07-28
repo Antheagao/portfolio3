@@ -30,12 +30,11 @@ export type Skill = {
   /** Span the full row — for chips whose label needs the width. */
   wide?: boolean;
 };
-export type SkillCategory = { name: string; color: string; skills: Skill[] };
+export type SkillCategory = { name: string; skills: Skill[] };
 
 export const skillsByCategory: SkillCategory[] = [
   {
     name: "Languages & ML",
-    color: "bg-blue-900/20",
     skills: [
       { name: "C#", icon: <TbBrandCSharp className="text-green-500" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
@@ -48,7 +47,6 @@ export const skillsByCategory: SkillCategory[] = [
   },
   {
     name: "Frontend",
-    color: "bg-purple-900/20",
     skills: [
       { name: "React", icon: <SiReact className="text-cyan-500" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
@@ -58,7 +56,6 @@ export const skillsByCategory: SkillCategory[] = [
   },
   {
     name: "Backend / Database",
-    color: "bg-green-900/20",
     skills: [
       { name: "ASP.NET Core", icon: <SiDotnet className="text-indigo-400" /> },
       { name: "Entity Framework Core" }, // text-only
@@ -75,7 +72,6 @@ export const skillsByCategory: SkillCategory[] = [
   },
   {
     name: "Cloud / DevOps",
-    color: "bg-orange-900/20",
     skills: [
       {
         name: "AWS (S3 · CloudFront · App Runner · RDS)",

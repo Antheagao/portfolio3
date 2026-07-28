@@ -11,10 +11,10 @@ export default function Skills() {
         {skillsByCategory.map((category) => (
           <div
             key={category.name}
-            className={`${category.color} p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow`}
+            className="bg-blue-900/20 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
           >
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-100">
-              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              <span className="w-2 h-2 rounded-full bg-blue-400" />
               {category.name}
             </h3>
 

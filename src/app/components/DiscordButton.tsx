@@ -24,10 +24,10 @@ export default function DiscordButton() {
   return (
     <button
       onClick={copy}
-      className="px-6 py-3 border border-[#5865F2] text-white/90 hover:bg-[#5865F2]/20 rounded-lg transition-colors inline-flex items-center gap-2"
+      className="px-6 py-3 border border-gray-700 hover:bg-gray-800/50 text-gray-300 rounded-lg transition-colors inline-flex items-center gap-2"
       aria-label="Copy my Discord username"
     >
-      <SiDiscord className="w-5 h-5" aria-hidden />
+      <SiDiscord className="w-5 h-5 text-[#5865F2]" aria-hidden />
       {copied ? "Copied!" : "Copy my Discord"}
     </button>
   );

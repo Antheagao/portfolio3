@@ -40,7 +40,7 @@ export default function About() {
           </div>
 
           {/* Certifications */}
-          <div className="mt-6 p-4 bg-green-900/20 rounded-lg">
+          <div className="mt-6 p-4 bg-blue-900/20 rounded-lg">
             <h3 className="font-semibold mb-3 text-gray-100">Certifications</h3>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">

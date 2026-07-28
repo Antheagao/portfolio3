@@ -12,7 +12,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className="bg-[#1a1a1a] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700 hover:border-blue-400/30"
+            className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-800 hover:border-blue-400/30"
           >
             {/* Media */}
             <div className="h-48 relative">
@@ -49,7 +49,7 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2 px-4 bg-gray-900 hover:bg-gray-700 text-white text-center rounded transition"
+                  className="flex-1 py-2 px-4 bg-gray-800 hover:bg-gray-700 text-white text-center rounded transition"
                 >
                   Code
                 </a>
