@@ -47,12 +47,4 @@ export const projects: Project[] = [
     videoBase: "/character-demo",
     poster: "/character-poster.jpg",
   },
-  {
-    title: "Book Review App",
-    description:
-      "Book manager pairing a React UI with PostgreSQL-backed search and a real-time cover-art API.",
-    tech: ["React", "Node.js", "Express", "PostgreSQL"],
-    github: "https://github.com/Antheagao/book-notes-app",
-    image: "/book-notes-home.png",
-  },
 ];
