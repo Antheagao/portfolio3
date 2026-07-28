@@ -10,7 +10,7 @@ export default function Availability() {
       <div className="max-w-4xl mx-auto relative">
         <div className="flex flex-col items-center text-center">
           <span className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-600/40 bg-emerald-500/10 px-3 py-1 text-emerald-300">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse motion-reduce:animate-none" />
             Open to Opportunities
           </span>
 

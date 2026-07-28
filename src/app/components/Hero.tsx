@@ -28,7 +28,10 @@ export default function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">{site.tagline}</p>
+        <p className="text-xl md:text-2xl text-gray-300 mb-3">{site.tagline}</p>
+        <p className="text-base md:text-lg text-gray-400 mb-8">
+          {site.stack.join(" · ")}
+        </p>
 
         {/* CTA Buttons */}
         <div className="flex gap-4 justify-center">
@@ -51,7 +54,7 @@ export default function Hero() {
       {/* Scroll Down Arrow */}
       <a
         href="#projects"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce motion-reduce:animate-none"
         aria-label="Scroll to projects"
       >
         <svg

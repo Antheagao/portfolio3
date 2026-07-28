@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import Year from "./Year";
 
 export default function Footer() {
   return (
@@ -43,7 +44,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+          <p>© <Year /> {site.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>

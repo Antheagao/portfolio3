@@ -16,6 +16,9 @@ export default function ProjectVideo({ videoBase, poster, alt }: Props) {
     const video = ref.current;
     if (!video) return;
 
+    // Respect the OS-level reduced-motion preference: leave the poster frame.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

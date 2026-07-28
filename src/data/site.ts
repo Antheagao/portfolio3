@@ -1,7 +1,8 @@
 // Single source of truth for personal info and external links.
 export const site = {
   name: "Anthony Mendez",
-  tagline: "Full-Stack Developer | Software Engineer",
+  tagline: "Software Engineer",
+  stack: ["Rust", "TypeScript", "Next.js", "PostgreSQL"],
   url: "https://www.anthonymendezswe.com",
   email: "anthonymendez.dev@gmail.com",
   discordUsername: "@Antheagao",

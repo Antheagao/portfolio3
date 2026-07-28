@@ -11,9 +11,8 @@ import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const title = "Anthony Mendez | Full-Stack Developer";
-const description =
-  "Portfolio of Anthony Mendez, a full-stack developer building efficient, user-centric web applications.";
+const title = `${site.name} | ${site.tagline}`;
+const description = `Portfolio of ${site.name}, a software engineer building full-stack web applications with ${site.stack.join(", ")}.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -34,6 +33,18 @@ export const metadata: Metadata = {
   },
 };
 
+// Person schema so search engines connect the site to its owner and profiles.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: site.name,
+  url: site.url,
+  email: `mailto:${site.email}`,
+  jobTitle: site.tagline,
+  knowsAbout: site.stack,
+  sameAs: [site.links.github, site.links.linkedin],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -42,6 +53,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} font-sans`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         {children}
         <Footer />
