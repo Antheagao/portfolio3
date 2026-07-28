@@ -8,7 +8,6 @@ const projects = [
       "Dark-themed task manager with secure sign-in, CRUD tasks, due dates/times, urgency, filtering & sorting. Deployed on AWS (S3 + CloudFront, App Runner, RDS).",
     tech: ["C#/.NET", "ASP.NET Core", "EF Core", "SQL Server", "React (Vite)", "Axios", "AWS"],
     github: "https://github.com/Antheagao/to-do-app",
-    demo: "https://d1p7pk2h9bas4v.cloudfront.net",
     image: "/todo-demo.gif",
     videoBase: "/todo-demo",
   },
@@ -18,7 +17,6 @@ const projects = [
       "Developed and deployed a full-stack pathfinding visualization platform using React and Python FastAPI, featuring an animated frontend and benchmarked backend (A*, Dijkstra, BFS, DFS, Bidirectional BFS).",
     tech: ["Python", "FastAPI", "JavaScript", "React", "Tailwind"],
     github: "https://github.com/Antheagao/graph-search-visual",
-    demo: "https://graph-search-visual.vercel.app",
     image: "/graph-demo.gif",
     videoBase: "/graph-demo",
   },
@@ -36,7 +34,6 @@ const projects = [
       "PostgreSQL (Supabase)",
     ],
     github: "https://github.com/Antheagao/character-rater",
-    demo: "https://character-rater.vercel.app",
     image: "/character-demo.gif",
     videoBase: "/character-demo",
   },
@@ -46,7 +43,6 @@ const projects = [
       "Full-stack book manager with real-time cover API, PostgreSQL queries, and React UI.",
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com/Antheagao/book-notes-app",
-    demo: "",
     image: "/book-notes-home.png",
   },
 ];
@@ -102,16 +98,6 @@ export default function Projects() {
                 >
                   Code
                 </a>
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 py-2 px-4 border border-gray-600 hover:bg-gray-700/50 text-gray-300 text-center rounded transition"
-                  >
-                    Live Demo
-                  </a>
-                )}
               </div>
             </div>
           </div>
