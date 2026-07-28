@@ -7,8 +7,6 @@ import {
   SiCplusplus,
   SiPostgresql,
   SiSupabase,
-  SiHtml5,
-  SiCss3,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -18,15 +16,12 @@ import {
   SiPrisma,
   SiPytorch,
   SiJest,
-  SiGit,
   SiDocker,
   SiLinux,
   SiTailwindcss,
   SiDotnet,
   SiSwagger,
-  SiVite,
   SiGithubactions,
-  SiAxios,
 } from "react-icons/si";
 
 export type Skill = {
@@ -57,11 +52,7 @@ export const skillsByCategory: SkillCategory[] = [
     skills: [
       { name: "React", icon: <SiReact className="text-cyan-500" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-      { name: "Vite", icon: <SiVite className="text-purple-500" /> },
-      { name: "Axios", icon: <SiAxios className="text-sky-500" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
-      { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
-      { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
       { name: "Jest", icon: <SiJest className="text-red-400" /> },
     ],
   },
@@ -71,7 +62,6 @@ export const skillsByCategory: SkillCategory[] = [
     skills: [
       { name: "ASP.NET Core", icon: <SiDotnet className="text-indigo-400" /> },
       { name: "Entity Framework Core" }, // text-only
-      { name: "ASP.NET Identity (JWT)" }, // text-only
       { name: "SQL Server", icon: <FaDatabase className="text-red-500" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
       { name: "Supabase", icon: <SiSupabase className="text-green-500" /> },
@@ -94,7 +84,6 @@ export const skillsByCategory: SkillCategory[] = [
       },
       { name: "GitHub Actions", icon: <SiGithubactions className="text-blue-500" /> },
       { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
-      { name: "Git", icon: <SiGit className="text-orange-600" /> },
       { name: "Linux", icon: <SiLinux className="text-yellow-500" /> },
     ],
   },
