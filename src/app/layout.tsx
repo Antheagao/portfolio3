@@ -41,6 +41,7 @@ const jsonLd = {
   url: site.url,
   email: `mailto:${site.email}`,
   jobTitle: site.tagline,
+  worksFor: { "@type": "Organization", name: "GreenGrowth CPAs" },
   knowsAbout: site.stack,
   sameAs: [site.links.github, site.links.linkedin],
 };

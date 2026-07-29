@@ -1,6 +1,7 @@
 import { site } from "@/data/site";
 
 const pageLinks = [
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
