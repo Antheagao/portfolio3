@@ -31,13 +31,21 @@ export const projects: Project[] = [
     poster: "/character-poster.jpg",
   },
   {
-    title: "To-Do App",
+    title: "doc-pilot — AI Document Intelligence",
     description:
-      "Production task manager deployed end to end on AWS (S3 + CloudFront, App Runner, RDS) — secure sign-in, CRUD tasks with due dates, urgency, filtering, and sorting in a dark-themed React UI.",
-    tech: ["C#/.NET", "ASP.NET Core", "EF Core", "SQL Server", "React", "AWS"],
-    github: "https://github.com/Antheagao/to-do-app",
-    videoBase: "/todo-demo",
-    poster: "/todo-poster.jpg",
+      "AI document-processing platform where a Claude vision model extracts structured data from messy receipts and invoices — per-field confidence routes uncertain values to a human review queue, corrections flow back into a field-level eval harness (99.4% accuracy, ~$0.01/doc, cost and latency tracked per document), all backed by a Postgres SKIP LOCKED job queue, 212 tests, CI, and a one-command Docker Compose stack.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "Claude API",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+    ],
+    github: "https://github.com/Antheagao/doc-pilot",
+    videoBase: "/doc-pilot-demo",
+    poster: "/doc-pilot-poster.jpg",
   },
   {
     title: "Graph Search Visualizer",
